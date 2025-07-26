@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhawneet Singh - Creative Developer</title>
+    <script src="https://cdn.jsdelivr.net/npm/react@18/umd/react.development.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@babel/standalone@7.23.0/babel.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.11.0/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"></script>
+   <!-- Font from google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Loading screen -->
+     <div class="loader">
+        <div class="loader-text">Loading...</div>
+        <div class="loader-bar">
+            <div class="loader-progress"></div>
+        </div>
+     </div>
+
+     <!-- Custom Cursor -->
+      <div class="cursor"></div>
+      <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+     <nav>
+        <div class="nav-container">
+
+              <div class="logo" ><a href="./index.html">BS</a></div>
+              <ul class="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./About.html">About</a></li>
+                <li><a href="./skills.html">Skills</a></li>
+                <li><a href="./project.html">Projects</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./experience.html">Experiences</a></li>
+                
+            </ul>
+            <div style="display: flex  ;align-items:center">
+                <div class="theme-toggle" id ="themeToggle">
+                    <span class="theme-toggle-icon moon">🌙</span>
+                    <span class="theme-toggle-icon sun">☀️</span>
+                    
+                </div>
+            </div>
+
+            <div class="menu-toggle " id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+        </div>
+     </nav>
+
+     <!-- Mobile Menu -->
+
+     <div class="mobile-menu" id="mobileMenu">
+        <a href="./index.html">Home</a>
+        <a href="./About.html">About</a>
+        <a href="./skills.html">Skills</a>
+        <a href="./project.html">Projects</a>
+        <a href="./contact.html">Contact</a>
+        <a href="./experience.html">Experiences</a>
+     </div>
+
+     <!-- Hero section -->
+      <section id="home " class="hero">
+        <div class="hero-bg"></div>
+
+        <div class="hero-content">
+            <h1 class="hero-title">Bhawneet Singh</h1>
+            <h2 class="hero-subtitle">Creative Developer</h2>
+            <p class="hero-description">Crafting digital experiences that inspire and engage through innovative design and cutting-edge technology</p>
+            <a href="./project.html" class="cta-button">View My Work</a>
+        </div>
+
+        <img src="./images/cartoonistic.png" alt="profile-img" class="hero-img">
+
+        <spline-viewer url="https://prod.spline.design/VpCcm8fwfpbe0ULD/scene.splinecode" class="hero-3d-model"></spline-viewer>
+      </section>
+
+      <!-- 3d model(Spline) -->
+       <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.13/build/spline-viewer.js"></script>
+
+    <!-- GSAP Plugins -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <script src="app.js"></script>
+</body>
+</html>
